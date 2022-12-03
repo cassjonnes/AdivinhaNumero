@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Source+Sans+Pro:wght@200&display=swap');
+
+:root{
+    --font-family: 'Montserrat', sans-serif;
+    --backgroud-color: #0aa1dd;
+    --primary-color: #e8f9fd;
+}
+
+body{
+    background-color: var(--backgroud-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+h1{
+    font-size: 4em;
+}
+
+h2{
+    font-size: 6em;
+}
+
+h3{
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.mensagem{
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+.box{
+    border: 2px solid var(--primary-color);
+    display: inline-block;
+    font-size: 3em;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 90px;
+}
+
+.mensagem div{
+    font-size: 2em;
+}
+
+.btn-jogar{
+    width: 30%;
+    border-radius: 5px;
+    padding: 1em 2em;
+    margin-top: 1em;
+    cursor: pointer;
+    background-color: orange;
+    color: #ffffff;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width:950px){
+    h1, h2{
+        margin: 1em;
+        font-size: 2em;
+    }
+
+    .box{
+        font-size: 1em;
+    }
+
+    #chute > div{
+        font-size: 1em;
+    }
+
+    .btn-jogar{
+        width: 40%;
+        margin-top: 4em;
+    }
+}
